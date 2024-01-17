@@ -7,11 +7,16 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import './MobileFooter.css';
 
-const MobileFooter = () => {
+const MobileFooter = ({moreMobileFooter}) => {
   const [activeItem, setActiveItem] = useState('home');
 
   const handleItemClick = (item) => {
     setActiveItem(item);
+    if(item === 'more') {
+      moreMobileFooter(true)
+    } else {
+      moreMobileFooter(false)
+    }
   };
 
   return (

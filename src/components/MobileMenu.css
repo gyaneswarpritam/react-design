@@ -1,0 +1,91 @@
+/* HamburgerMenu.css */
+
+.mobile-menu-container {
+  display: none; /* Initially hide the menu */
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-menu-container {
+    display: block; /* Show the menu on mobile sizes */
+  }
+}
+
+/* MobileMenu.css */
+
+.mobile-menu {
+  width: 100%;
+  max-width: 400px; /* Adjust the maximum width as needed */
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+  font-size: 1.2em;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.greeting {
+  font-size: 0.8em;
+  margin-bottom: 10px;
+}
+
+.small-font {
+  font-size: 0.8em;
+}
+
+.bold-font {
+  font-weight: bold;
+}
+
+.menu-icon {
+  margin-right: 10px;
+}
+
+.arrow-icon {
+  float: right;
+  margin-left: 10px;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.logo-icons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+  font-size: 1.2em;
+}
